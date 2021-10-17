@@ -10,7 +10,7 @@
 
 ฉบับภาษาไทย แปลจาก [ฉบับภาษาเอสเปรันโต (ฉบับไม่เป็นทางการ)](https://www.gutenberg.org/ebooks/8224)
 
-🔗 https://warut92.github.io/unualibro/index
+🔗 https://warut92.github.io/unualibro/
 
 🌐 https://eo.wikipedia.org/wiki/Unua_Libro
 
