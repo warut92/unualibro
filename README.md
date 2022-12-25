@@ -13,9 +13,3 @@
 🔗 
 
 🌐 https://eo.wikipedia.org/wiki/Unua_Libro
-
-# Programligvo
-
-Markdown
-
-# Permesilo
