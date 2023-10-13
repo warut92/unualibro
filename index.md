@@ -1,5 +1,7 @@
 <link href="markdown.css" rel="stylesheet"></link>
+
 <center>
+
 หมอเอสเปรันโต
 
 # ภาษาสากล บทนำ และหนังสือเรียนฉบับสมบูรณ์
