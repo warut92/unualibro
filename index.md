@@ -1,13 +1,12 @@
 <link href="markdown.css" rel="stylesheet">
 
-<center>
-
 หมอเอสเปรันโต
 
 # ภาษาสากล บทนำ และหนังสือเรียนฉบับสมบูรณ์
 
 {Por Tajlandanoj}
 
+---
 
 ฉบับภาษาไทย
 
@@ -25,5 +24,3 @@
 
 
 [เริ่ม](./1.md)
-
-</center>
