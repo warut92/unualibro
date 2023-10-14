@@ -12,7 +12,7 @@
 
 โดย
 
-[นายวรุฒ ](warut92.github.io)
+[นายวรุฒ ](https://www.warut92.github.io)
 
 ฉบับออนไลน์
 
