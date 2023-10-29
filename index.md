@@ -1,4 +1,5 @@
 <link href="markdown.css" rel="stylesheet">
+<center>
 
 หมอเอสเปรันโต
 
@@ -22,5 +23,5 @@
 
 ปรับปรุงล่าสุด 2023
 
-
 [เริ่ม](./1.md)
+</center>
