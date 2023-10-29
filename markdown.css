@@ -7,16 +7,28 @@ body, * {
 } */
 
 @font-face {
-  font-family: "Kimberley";
+  font-family: "SOV_ReangPhim2426";
   src: url(./tiparo/SOV_ReangPhim2426.ttf) format("truetype");
+  unicode-range: U+0E01-0E7F; /* nur por taja tiparo */
 }
 
+@font-face {
+  /* font-family: "Times New Roman", Times, serif; */
+  /* src: url(./tiparo/SOV_ReangPhim2426.ttf) format("truetype"); */
+  unicode-range: U+0108-011C, U+0124-0126, U+0109-011D, U+0125-0127; /* nur por taja tiparo */
+}
+
+
 body, * {
-    font-family: 'SOV_ReangPhim2426', sans-serif;
+    font-family: 'SOV_ReangPhim2426', Times, serif;
+    /* font-family: "Times New Roman"; */
     color: black;
     background-color: BurlyWood;
 }
 
+small {
+  font-size: 0.5em;
+}
 
 a {
     color: red;
