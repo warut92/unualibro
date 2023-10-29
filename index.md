@@ -4,7 +4,7 @@
 
 # ภาษาสากล บทนำ และหนังสือเรียนฉบับสมบูรณ์
 
-{Por Siamˌanˌoˌj}
+{Por Siam<small>,</small>an<small>,</small>o<small>,</small>j}
 
 ---
 
