@@ -1,10 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap');
 
 body, * {
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     color: black;
-    background-color: BurlyWood;   
+    background-color: BurlyWood;
+} */
+
+@font-face {
+  font-family: "Kimberley";
+  src: url(./tiparo/SOV_ReangPhim2426.ttf) format("truetype");
 }
+
+body, * {
+    font-family: 'SOV_ReangPhim2426', sans-serif;
+    color: black;
+    background-color: BurlyWood;
+}
+
 
 a {
     color: red;
