@@ -1,18 +1,20 @@
 <html>
 <head>
 	<title></title>
-	<script type="text/javascript" src="datumo.json"></script>
 	<link rel="stylesheet" href="./markdown.css">
   <meta charset="UTF-8">
 </head>
 <body>
-	<h1>Vortar<small>,</small>o por Siam<small>,</small>an<small>,</small>o<small>,</small>j</h1>
+	<h1>Vort<small>,</small>ar<small>,</small>o por Siam<small>,</small>an<small>,</small>o<small>,</small>j</h1>
 	<p>ทุกสิ่งที่เขียนด้วยภาษาสากลนี้ ท่านสามารถหาความหมายของคำต่าง ๆ ด้วยพนานุกรมเล่มนี้ คำศัพท์ที่ให้ความหมายจะเขียนอยู่ด้วยกัน แต่จะแบ่งด้วยสัญลักษณ์ขีดเล็ก ๆ ตัวอย่าง   frat<small>,</small>in<small>,</small>o  คำนี้จะให้ความหมาย  1 ความหมาย แต่ประกอบด้วย 3 คำย่อย ซึ่งท่านจะต้องค้นหาแยกกัน</p>
 	<p id="vortaro"></p>
 	ดึงข้อมูลมาจาก <a href="https://vortaro.warut.net">vortaro.warut.net</a>
 <script type="text/javascript" src="https://vortaro.warut.net/th-vortaro.js"></script>
 <script>
 //preni variablon de th-vortaro.js kaj konverti al Array (tabeltipo) pere de <br>
+let vortaro_HTML = vortaro.innerHTML
+vortaro_HTML = vortaro.replace(/\/\/(.+?)\/\//g, '<i>$1</i>')
+vortaro_HTML = vortaro.replace(/\n/g, '<br>')
 vortaro_HTML = vortaro_HTML.split(/<br>/g)
 
 //serĉi nur array kiuj enhavas "{UL}"
