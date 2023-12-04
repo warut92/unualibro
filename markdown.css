@@ -7,26 +7,27 @@ body, * {
 } */
 
 
-@import url('https://fonts.cdnfonts.com/css/garamond-libre');
+/* @import url('https://fonts.cdnfonts.com/css/garamond-libre'); */
 
 
-@font-face {
+/* @font-face {
   font-family: "SOV_ReangPhim2426";
   src: url(./tiparo/SOV_ReangPhim2426.ttf) format("truetype");
-  unicode-range: U+0E01-0E7F; /* nur por taja tiparo */
-}
+  unicode-range: U+0E01-0E7F;
+} */
 
 @font-face {
-   font-family: monospace; 
+   font-family: monospace;
   unicode-range: U+0108-011C, U+0124-0126, U+0109-011D, U+0125-0127;
 }
 
 
 body, * {
-    font-family: 'SOV_ReangPhim2426', 'Garamond Libre', sans-serif;
+  /* font-family: 'SOV_ReangPhim2426', 'Garamond Libre', sans-serif; */
+    font-family: monospace;
     color: black;
-    background-color: BurlyWood;
-    font-size: 30px;
+    /* background-color: BurlyWood; */
+    font-size: 15px;
 }
 
 small {
@@ -38,5 +39,15 @@ a {
 }
 
 pre {
-    background-color: azure;
+  font-family: monospace;
+  font-size: 15px;
+  background-color: azure;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+td {
+  width: 25%;
 }
