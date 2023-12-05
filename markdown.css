@@ -31,6 +31,7 @@ body, * {
 }
 
 small {
+  font-family: verdana;
   font-size: 0.5em;
 }
 
@@ -45,9 +46,14 @@ pre {
 }
 
 table, th, td {
-  border: 1px solid;
+  border: 1px solid black;
+  border-collapse: collapse;
 }
-
-td {
-  width: 25%;
+.promeso {
+  width: 50%;
+}
+.kadro {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
 }

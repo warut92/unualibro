@@ -6,47 +6,50 @@
 </head>
 <body>
 	<h1>Vort<small>,</small>ar<small>,</small>o por tajland<small>,</small>an<small>,</small>o<small>,</small>j</h1>
-	<p>ทุกสิ่งที่เขียนด้วยภาษาสากลนี้ ท่านสามารถหาความหมายของคำต่าง ๆ ด้วยพนานุกรมเล่มนี้ คำศัพท์ที่ให้ความหมายจะเขียนอยู่ด้วยกัน แต่จะแบ่งด้วยสัญลักษณ์ขีดเล็ก ๆ ตัวอย่าง   frat<small>,</small>in<small>,</small>o  คำนี้จะให้ความหมาย  1 ความหมาย แต่ประกอบด้วย 3 คำย่อย ซึ่งท่านจะต้องค้นหาแยกกัน</p>
+	Iner<small>,</small>naci<small>,</small>a - Taj<small>,</small>a Vort<small>,</small>ar<small>,</small>o
+	<p>ทุกสิ่งที่เขียนด้วยภาษาสากล ท่านสามารถหาความหมายของคำต่าง ๆ ด้วยพนานุกรมเล่มนี้ คำศัพท์ที่ให้ความหมายจะเขียนอยู่ด้วยกัน แต่จะแบ่งด้วยสัญลักษณ์ขีดเล็ก ๆ ตัวอย่าง   frat<small>,</small>in<small>,</small>o  คำนี้จะให้ความหมาย  1 ความหมาย แต่ประกอบด้วย 3 คำย่อย ซึ่งท่านจะต้องค้นหาแยกกัน</p>
 	<p id="vortaro"></p>
 	ดึงข้อมูลมาจาก <a href="https://vortaro.warut.net">vortaro.warut.net</a>
 <script type="text/javascript" src="https://vortaro.warut.net/th-vortaro.js"></script>
 <script>
 //E alfabeto
-let E_alfabeto = `A
-B
-C
-Ĉ
-D
-E
-F
-G
-Ĝ
-H
-Ĥ
-I
-J
-Ĵ
-K
-L
-M
-N
-O
-P
-R
-S
-Ŝ
-T
-U
+let E_alfabeto = `
+A {UL}
+B {UL}
+C {UL}
+Ĉ {UL}
+D {UL}
+E {UL}
+F {UL}
+G {UL}
+Ĝ {UL}
+H {UL}
+Ĥ {UL}
+I {UL}
+J {UL}
+Ĵ {UL}
+K {UL}
+L {UL}
+M {UL}
+N {UL}
+O {UL}
+P {UL}
+R {UL}
+S {UL}
+Ŝ {UL}
+T {UL}
+U {UL}
 Ŭ
-V
-Z`
+V {UL}
+Z {UL}`
 vortaro = vortaro.concat(E_alfabeto)
-let vortaro_HTML = vortaro.innerHTML
+console.log('VORTARO', vortaro)
+let vortaro_HTML = vortaro
+console.log('VORTARO_HTML', vortaro_HTML)
 //preni variablon de th-vortaro.js kaj konverti al Array (tabeltipo) pere de <br>
 vortaro_HTML = vortaro.replace(/\/\/(.+?)\/\//g, '<i>$1</i>')
 vortaro_HTML = vortaro.replace(/\n/g, '<br>')
 vortaro_HTML = vortaro_HTML.split(/<br>/g)
-console.log('VORTARO_HTML', vortaro_HTML)
 
 //serĉi nur array kiuj enhavas "{UL}"
 let sxablono_regex = / \{UL\}/;
@@ -90,6 +93,7 @@ rezulto = rezulto.replace(/'a/g, "")
 rezulto = rezulto.split(/<br>/g)
 //forigi la unuan signon ; → kaj  kaj postaĵojn
 rezulto = rezulto.map(arr => arr.replace(/;.*/, ""))
+rezulto = rezulto.map(arr => arr.replace(/<hr>.*/, ""))
 rezulto = rezulto.map(arr => arr.replace(/:.*/, ""))
 rezulto = rezulto.map(arr => arr.replace(/→.*/, ""))
 
