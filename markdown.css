@@ -57,3 +57,20 @@ table, th, td {
   border-radius: 5px;
   padding: 20px;
 }
+
+body {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+
+.a4-size {
+            width: 210mm;
+            height: 297mm;
+            margin: 20px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
